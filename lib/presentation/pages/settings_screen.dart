@@ -37,7 +37,7 @@ class SettingsScreen extends StatelessWidget {
           // Device Section
           _buildSectionHeader("Device"),
           _buildListTile(
-            icon: Icons.glasses,
+            icon: Icons.remove_red_eye,
             title: "NeuVox Glasses V2",
             subtitle: "Connected • Battery 98%",
             trailing: const Icon(Icons.check_circle, color: AppColors.success, size: 20),

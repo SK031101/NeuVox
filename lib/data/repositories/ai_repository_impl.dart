@@ -14,20 +14,20 @@ class AIRepositoryImpl implements AIRepository {
     
     // Mock Logic
     if (input.toLowerCase().contains("water")) {
-      return const Right("I would like some water, please.");
+      return Right("I would like some water, please.");
     } else if (input.toLowerCase().contains("pain")) {
-      return const Right("I am experiencing pain. Can you help me adjust?");
+      return Right("I am experiencing pain. Can you help me adjust?");
     } else if (input.toLowerCase().contains("cold")) {
-      return const Right("I am feeling cold. Could you please bring a blanket?");
+      return Right("I am feeling cold. Could you please bring a blanket?");
     }
     
-    return const Right("I understand. Could you please clarify?");
+    return Right("I understand. Could you please clarify?");
   }
 
   @override
   Future<Either<Failure, String>> processIntent(String naturalLanguageInput) async {
     // Simulate intent processing
     await Future.delayed(const Duration(seconds: 1));
-    return const Right("Intent Recognized: General Request");
+    return Right("Intent Recognized: General Request");
   }
 }

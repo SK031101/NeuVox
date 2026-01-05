@@ -122,7 +122,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 20,
                 child: GridView.count(
                   crossAxisCount: 2,
-                  runSpacing: 2,
+                  mainAxisSpacing: 2,
                   crossAxisSpacing: 2,
                   physics: const NeverScrollableScrollPhysics(),
                   children: const [

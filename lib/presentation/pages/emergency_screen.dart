@@ -87,13 +87,10 @@ class _EmergencyScreenState extends State<EmergencyScreen> {
                      ],
                    ),
                    child: const Center(
-                     child: Text("Subject", style: TextStyle(color: Colors.transparent)), // Hidden accessiblity text? No, just visual
+                     child: Text("TAP FOR\nHELP", textAlign: TextAlign.center, style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white)),
                    ),
                  ).animate(onPlay: (c) => c.repeat(reverse: true)) // Pulse effect
                   .scale(begin: const Offset(0.95, 0.95), end: const Offset(1.05, 1.05), duration: 800.ms),
-               ).child(
-                  child: const Center(child: Text("TAP FOR\nHELP", textAlign: TextAlign.center, style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white)))
-               ),
                const SizedBox(height: 40),
                const Text("Notifies Emergency Contacts\n& Shares Location", textAlign: TextAlign.center, style: TextStyle(color: Colors.white54)),
             ] else ...[
@@ -119,12 +116,3 @@ class _EmergencyScreenState extends State<EmergencyScreen> {
   }
 }
 
-// Extension to wrap a widget easily for the "child" method in animate().
-extension WidgetExt on Widget {
-   Widget child({required Widget child}) {
-     // This was a bit hacky in the thought process, fixing the structure:
-     // The animate().child() isn't standard in flutter_animate 4.x broadly used like this without builder.
-     // I'll rewrite the gesture detector part to be cleaner in the actual code.
-     return child;
-   }
-}
