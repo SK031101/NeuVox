@@ -1,0 +1,9 @@
+name: research_lab
+description: Experimental algorithms for Zero-Shot Decoding and Multimodal Fusion.
+version: 0.0.1-alpha
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  neuro_capture:
+    path: ../neuro_capture

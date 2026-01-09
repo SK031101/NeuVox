@@ -1,0 +1,9 @@
+name: neuro_capture
+description: A library for capturing and normalizing neural signals from hardware.
+version: 0.0.1
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter

@@ -1,0 +1,50 @@
+name: neuvox
+description: A NeuVox Flutter application.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.17.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  intl: ^0.20.2
+  uuid: ^4.1.0
+  dartz: ^0.10.1
+  provider: ^6.0.5
+  get_it: ^7.6.0
+  flutter_animate: ^4.2.0
+  equatable: ^2.0.5
+  font_awesome_flutter: ^10.5.0
+
+  # Gen2 Architecture
+  neuro_capture:
+    path: ./packages/neuro_capture
+  azure_client:
+    path: ./packages/azure_client
+  research_lab:
+    path: ./packages/research_lab
+  shared_preferences: ^2.5.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/images/
+    - assets/animations/placeholder.json
+
+  # Fonts (Add custom fonts if needed)
+  # fonts:
+  #   - family: CustomFont
+  #     fonts:
+  #       - asset: fonts/CustomFont-Regular.ttf
+  #       - asset: fonts/CustomFont-Bold.ttf
+  #         weight: 700

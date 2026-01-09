@@ -1,0 +1,9 @@
+name: azure_client
+description: Interface for Microsoft Azure services (Identity, IoT Hub, Cosmos).
+version: 0.0.1
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
